@@ -1,0 +1,41 @@
+.book-detail-page {
+  min-height: calc(100vh - 300px);
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-sm);
+  transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--color-accent);
+}
+
+.book-detail-loading,
+.book-detail-error {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-light);
+}
+
+.book-detail-error p {
+  margin-bottom: var(--spacing-md);
+}
+
+.delete-confirmation {
+  text-align: center;
+}
+
+.delete-confirmation p {
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+}
+
+.delete-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+}

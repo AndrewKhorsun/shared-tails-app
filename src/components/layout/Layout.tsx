@@ -1,0 +1,17 @@
+import type { ReactNode } from "react";
+import { Outlet } from "react-router-dom";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+import "./Layout.css";
+
+export function Layout(): ReactNode {
+  return (
+    <div className="layout">
+      <Header />
+      <main className="main-content">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+}

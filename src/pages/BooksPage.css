@@ -1,0 +1,56 @@
+.books-page {
+  min-height: calc(100vh - 300px);
+}
+
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.books-header h1 {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-xs);
+}
+
+.books-count {
+  color: var(--color-text-light);
+  opacity: 0.7;
+  font-size: var(--font-sm);
+}
+
+.books-loading,
+.books-error {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-light);
+}
+
+.books-error p {
+  margin-bottom: var(--spacing-md);
+  color: #dc3545;
+}
+
+.delete-confirmation {
+  text-align: center;
+}
+
+.delete-confirmation p {
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+}
+
+.delete-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .books-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+}
