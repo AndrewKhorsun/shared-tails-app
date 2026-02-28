@@ -20,6 +20,11 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install
+      - name: Check env
+        run: |
+          if [ -n "$VITE_API_URL" ]; then echo "VITE_API_URL is set"; else echo "VITE_API_URL is EMPTY"; fi
+        env:
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
       - run: pnpm build
         env:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
