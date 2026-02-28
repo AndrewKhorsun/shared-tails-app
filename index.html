@@ -5,10 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/shared-tails-app/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>frontend</title>
-    <script type="module" crossorigin src="/shared-tails-app/assets/index-CGiyCJ2C.js"></script>
+    <script type="module" crossorigin src="/shared-tails-app/assets/index-CMSrPec8.js"></script>
     <link rel="stylesheet" crossorigin href="/shared-tails-app/assets/index-5u6pQzKA.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const redirect = sessionStorage.getItem('redirect');
+      if (redirect) {
+        sessionStorage.removeItem('redirect');
+        window.history.replaceState(null, '', '/shared-tails-app' + redirect);
+      }
+    </script>
   </body>
 </html>
