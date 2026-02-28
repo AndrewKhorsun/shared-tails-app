@@ -67,7 +67,7 @@ function AppRoutes(): ReactNode {
 
 function App(): ReactNode {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shared-tails-app">
       <AuthProvider>
         <AppRoutes />
       </AuthProvider>
